@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert's Journals</title>
+    <link rel="icon" type="image/png" href="https://www.hackthebox.eu/images/favicon.png">
+</head>
+<body>
+    <header>
+        <div> 
+            <h1>Robert's Journals</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#journal1">Journal 1</a></li>
+                <li><a href="#journal2">Journal 2</a></li>
+                <li><a href="#journal3">Journal 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br />
+        <hr />
+        <section>
+            <h2 id="journal1">Journal 1: 4/6/2021</h2>
+            <h3>Busy day</h3>
+            <p> <strong>Today was a very busy day</strong>. <span> Not only did I have <i>three</i> 80 minute classes, but I also had three quizzes.</span></p>
+            <p><b>But, I did finish my assignments:</b></p>
+            <ul>
+                <li>Watch lectures</li>
+                <li>Study for econ</li>
+                <li>Review ECE stuff</li>
+            </ul>
+            <p><b>Some things I still need to do:</b></p>
+            <ol>
+                <li><em>Finish CSE hw</em></li>
+                <li>Finish ECE hw</li>
+                <li>Finish econ hw</li>
+            </ol>
+            <details>
+                <summary>Just an interesting music video from a music class last quarter</summary>
+                <video width="320" height="240" controls>
+                    <source src="media/Tanya Tagaq - Uja-BCuayGvy3i8.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+            </details>
+        </section>
+        <br />
+        <section>
+            <h2 id="journal2">Journal 2: 4/7/2021</h2>
+            <h3>Pretty relaxing day</h3>
+            <p><strong>It was a pretty relaxing day today</strong>. <span> I only had my cryptography class and some work, so had a lot of time to get work done.</span></p>
+            <p><b>Some of the things I did:</b></p>
+            <ul>
+                <li>Watched lectures</li>
+                <li>Finished econ hw</li>
+                <li>Did some ECE hw</li>
+                <li>Did some CSE hw</li>
+            </ul>
+            <p><b>Some things I still need to do:</b></p>
+            <ol>
+                <li><em>Finish CSE hw</em></li>
+                <li>Finish ECE hw</li>
+                <li>Plan meeting for club</li>
+            </ol>
+            <details> 
+                <summary>Here's a picture I really enjoy.</summary>
+                <img
+                    src="media/Mystic-Mountain.png"
+                    alt="Mystic Mountain"
+                    width="512"
+                />
+            </details>
+        </section>
+        <br />
+        <section>
+            <h2 id="journal3">Journal 3: 4/8/2021</h2>
+            <h3>Another busy day</h3>
+            <p><strong>Tuesdays and Thursdays are going to be my busy days</strong>. <span>Pretty much all my classes are on these two days, so I'll have to plan carefully.</span></p>
+            <p><b>Some of the things I did today:</b></p>
+            <ul>
+                <li>Watched lectures</li>
+                <li>Did some hw</li>
+                <li>Finished notes for club</li>
+            </ul>
+            <p><b>Things I still need to do:</b></p>
+            <ol>
+                <li>Finish cse hw</li>
+                <li>Watch ece video</li>
+                <li>Do some econ hw</li>
+            </ol>
+            <details>
+                <summary>One of my favorite pieces of music</summary>
+                <audio controls>
+                    <source src="media/Lang Lang Rêverie, Claude Debussy.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+            </details>
+        </section>
+        <br />
+    </main>
+    <hr />
+    <footer>
+        <h3>Form to create a new journal entry</h3>
+        <form>
+            <fieldset>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br>
+                <label for="post">Publish Date:</label>
+                <input type="date" id="post" name="post">
+                <br />
+                <br />
+                <label for="text">Enter text here:</label><br>
+                <textarea id="text" name="text2" rows="5" cols="50">
+                </textarea>
+                <br />
+                <br />
+                <label for="set">Choose privacy setting:</label>
+                <input list="sets" name="set" id="set">
+                <datalist id="sets">
+                    <option value="Private">
+                    <option value="Public">
+                </datalist>
+                <br />
+                <br />
+                <input type="checkbox" id="highlight" name="highlight" value="good">
+                <label for="accomplished"> Add things accomplished</label><br>
+                <input type="checkbox" id="lowlight" name="lowlight" value="bad">
+                <label for="todo"> Add things to do</label><br>
+                <br />
+                <input type="radio" id="video" name="media" value="video">
+                <label for="video">Video</label><br>
+                <input type="radio" id="audio" name="media" value="audio">
+                <label for="audio">Audio</label><br>
+                <input type="radio" id="picture" name="media" value="picture">
+                <label for="picture">Picture</label>
+                <br />
+                <br />
+                <button type="button" onclick="alert('Journal entry created!')">Submit</button>
+            </fieldset>
+            <br />
+            <br />
+        </form>
+    </footer>
+</body>
+</html>
