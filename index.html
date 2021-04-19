@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert's Journals</title>
     <link rel="icon" type="image/png" href="https://www.hackthebox.eu/images/favicon.png">
+    <link rel="stylesheet" href="mystyle.css">
+    <!--Internal CSS-->
+    <style>
+        /* Adding color to HTML elements*/
+        h2 {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+        h3 {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255)
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <!--Inline Style-->
+    <header style="font-size: 12pt;">
         <div> 
             <h1>Robert's Journals</h1>
         </div>
@@ -18,11 +32,44 @@
                 <li><a href="#journal3">Journal 3</a></li>
             </ul>
         </nav>
+        <!--Flexbox-->
+        <ul class="flex-container">
+            <li class="flex-item">From Los Angeles, CA</li>
+            <li class="flex-item">Languages: Chinese, English</li>
+            <li class="flex-item">Programming: Java, C, C++, Python</li>
+            <li class="flex-item">Hobbies: triathlons, orchestra</li>
+        </ul>
+        <!--Grid-->
+        <div class="grid-container">
+            <div class="grid-item">1. Test 1</div>
+            <div class="grid-item">2. Test 2</div>
+            <div class="grid-item">3. Test 3</div>  
+          </div>
     </header>
-    <main>
+    <!--Inline CSS-->
+    <main style="font-size: 4.5mm;">
         <br />
         <hr />
-        <section>
+        <!--Combinator stuff-->
+        <div>
+            <p>This is a combinator practice with div and p</p>
+            <p>Another practice of combinator.</p>
+            <section><p>This is in its own section.</p></section>
+            <section><p>Should be green and not yellow as it is not in child selector.</p></section>
+        </div>
+        <span><p>This is inside span</p></span>
+        <p>This comes after span so it should be pink sibling</p>
+        <div> 
+            <b>This will test out the adjacent sibling combinator</b>
+            <b>so this wont be colored. </b>
+        </div>
+        <b> This should be colored as it is the next b</b>
+        <b> This should NOT be colored as it is the last b</b>
+        <p class="ok"> Here I am doing element.class stuff like this</p>
+        <!--Journals-->
+        <br />
+        <hr />
+        <section class="first">
             <h2 id="journal1">Journal 1: 4/6/2021</h2>
             <h3>Busy day</h3>
             <p> <strong>Today was a very busy day</strong>. <span> Not only did I have <i>three</i> 80 minute classes, but I also had three quizzes.</span></p>
@@ -60,7 +107,7 @@
             </ul>
             <p><b>Some things I still need to do:</b></p>
             <ol>
-                <li><em>Finish CSE hw</em></li>
+                <li id="test">Finish CSE hw</li>
                 <li>Finish ECE hw</li>
                 <li>Plan meeting for club</li>
             </ol>
@@ -101,7 +148,7 @@
         <br />
     </main>
     <hr />
-    <footer>
+    <footer style="font-size: .40cm;"> 
         <h3>Form to create a new journal entry</h3>
         <form>
             <fieldset>
